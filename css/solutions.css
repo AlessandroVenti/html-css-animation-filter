@@ -78,26 +78,13 @@
   transform: scale(1.5);
 }
 
-@keyframes caricamento {
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
 .ex-10-icon {
   animation: caricamento 2s linear infinite;
  }
 
- @keyframes caricamento2 {
-   0 {
-     transform: rotate(0deg);
-   }
-   70% {
-     transform: rotate(270deg);
-   }
-
+ @keyframes caricamento {
    100% {
-     transform: rotate(0deg);
+     transform: rotate(-360deg);
    }
  }
 
@@ -105,40 +92,87 @@
    animation: caricamento2 1s linear;
   }
 
-@keyframes whiteright {
-  0% {
-    top: -10px; left: 10%;
+  @keyframes caricamento2 {
+    0 {
+      transform: rotate(0deg);
+    }
+    70% {
+      transform: rotate(270deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
   }
 
-  50% {
-    top: -10px; left: calc(100% - 60px);
-  }
-
-  100% {
-    top: -10px; left: 10%;
-  }
-
-}
-
-@keyframes whiteleft {
-  0% {
-    bottom: -10px; right: 20%;
-  }
-
-  50% {
-    bottom: -10px; right: calc(100% - 60px);
-  }
-
-  100% {
-    bottom: -10px; right: 10%;
-  }
-
+.ex-12-button:hover .ex-12-bottom-white{
+  animation: whiteleft 1s linear infinite;
 }
 
 .ex-12-button:hover .ex-12-top-white{
   animation: whiteright 1s linear infinite;
 }
 
-.ex-12-button:hover .ex-12-bottom-white{
-  animation: whiteleft 1s linear infinite;
+@keyframes whiteleft {
+  0% {
+    right: 20%;
+  }
+
+  50% {
+    right: calc(100% - 60px);
+  }
+
+  100% {
+    right: 10%;
+  }
+
+}
+
+@keyframes whiteright {
+  0% {
+    left: 10%;
+  }
+
+  50% {
+    left: calc(100% - 60px);
+  }
+
+  100% {
+    left: 10%;
+  }
+
+}
+
+.ex-13-button:hover .ex-13-top-white{
+  animation: upwhite 7s linear infinite;
+}
+
+.ex-13-top-white {
+  background-color: red;
+}
+
+@keyframes upwhite {
+  0% {
+    top: -10px; left: 10%;
+  }
+
+  20% {
+    top: -10px; left: calc(100% - 30px);
+  }
+
+  40% {
+    top: 90%; left: calc(100% - 30px);
+  }
+
+  60% {
+    top: 90%; left: -30px;
+  }
+
+  80% {
+    top: -10px; left: -30px;
+  }
+
+  100% {
+    top: -10px; left: 10%;
+  }
 }
