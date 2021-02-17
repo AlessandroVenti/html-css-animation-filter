@@ -144,35 +144,76 @@
 }
 
 .ex-13-button:hover .ex-13-top-white{
-  animation: upwhite 7s linear infinite;
-}
-
-.ex-13-top-white {
-  background-color: red;
+  animation: upwhite 5s linear infinite;
 }
 
 @keyframes upwhite {
+
   0% {
-    top: -10px; left: 10%;
+    top: -10px;
+    left: 10%;
   }
 
-  20% {
-    top: -10px; left: calc(100% - 30px);
+  25% {
+    top: -10px;
+    left: calc(100% - 30px);
   }
 
-  40% {
-    top: 90%; left: calc(100% - 30px);
+  35% {
+    top: calc(100% - 10px);
+    left: calc(100% - 30px);
   }
 
   60% {
-    top: 90%; left: -30px;
+    top: calc(100% - 10px);
+    left: -30px;
   }
 
-  80% {
-    top: -10px; left: -30px;
+  70% {
+    top: -10px;
+    left: -30px;
   }
 
   100% {
-    top: -10px; left: 10%;
+    top: -10px;
+    left: 10%;
+  }
+}
+
+
+.ex-13-button:hover .ex-13-bottom-white{
+  animation: bottomwhite 5s linear infinite;
+}
+
+@keyframes bottomwhite {
+
+  0% {
+    bottom: -10px;
+    right: 10%;
+  }
+
+  25% {
+    bottom: -10px;
+    right: calc(100% - 30px);
+  }
+
+  35% {
+    bottom: calc(100% - 10px);
+    right: calc(100% - 30px);
+  }
+
+  60% {
+    bottom: calc(100% - 10px);
+    right: -30px;
+  }
+
+  70% {
+    bottom: -10px;
+    right: -30px;
+  }
+
+  100% {
+    bottom: -10px;
+    right: 10%;
   }
 }
